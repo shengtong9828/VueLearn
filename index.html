@@ -8,6 +8,7 @@
 
   <body>
     <div id="app">
+      <div>{{message}}</div>
       <div v-for="item in messages">
         <h1>{{item}}</h1>
         <h3 style="color: red;">{{item}}</h3>
@@ -22,6 +23,7 @@
         el: '#app', // 用于挂载要管理的元素
         data: {
           // 定义数据
+          message: 'hello vue',
           messages: ['hello world', '123'],
         },
       })
